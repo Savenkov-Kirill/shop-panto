@@ -108,9 +108,4 @@ legend {
 html, body {
   font-family: var(--font-main);
   color: var(--text-color);
-}
-
-.header {
-  background-color: var(--footer-bg);
-  background-image: url("./../../img/header/header-bg.jpg");
 }/*# sourceMappingURL=main.css.map */
