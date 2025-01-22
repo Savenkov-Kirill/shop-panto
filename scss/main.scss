@@ -6,4 +6,10 @@
 @import "./base/base";
 
 // Blocks
-@import "./blocks/header";
+@import "../scss/blocks/header";
+@import "../scss/blocks/nav";
+@import "../scss/blocks/nav-list";
+@import "../scss/blocks/cart";
+@import "../scss/blocks/search-form";
+@import "../scss/blocks/info-dot";
+@import "../scss/blocks/info-hint";
