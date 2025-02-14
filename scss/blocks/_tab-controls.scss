@@ -13,9 +13,19 @@
     justify-content: center;
     align-items: center;
     border-radius: 32px;
-    background: #fff;
+    
     color: rgb(30, 30, 30, 0.8);
     font-weight: 500;
     font-size: 18px;
     line-height: 1.85;
+
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    &--active {
+        background-color: #fff;
+    }
 }
