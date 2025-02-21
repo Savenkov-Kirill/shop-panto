@@ -55,3 +55,23 @@ const swiper = new Swiper('.swiper', {
       prevEl: '#sliderPrev',
     }
   });
+
+
+// Tabs
+const tabsBtns = document.querySelectorAll('[data-tab]');
+
+for (let btn of tabsBtns) {
+
+    btn.addEventListener('click', function () {
+
+        // Убираем активные классы у всех кнопок
+        for (let btn of tabsBtns) {
+            btn.classList.remove('tab-controls__btn--active');
+        }
+
+        // Добавляем активный класс к текущей кнопке
+        this.classList.add('tab-controls__btn--active');
+
+        // Получаем значение категории товаров, которые нужно включить
+    })
+}
