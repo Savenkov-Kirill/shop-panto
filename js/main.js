@@ -59,6 +59,7 @@ const swiper = new Swiper('.swiper', {
 
 // Tabs
 const tabsBtns = document.querySelectorAll('[data-tab]');
+const tabsProducts = document.querySelectorAll('[data-tab-value]');
 
 for (let btn of tabsBtns) {
 
@@ -73,5 +74,19 @@ for (let btn of tabsBtns) {
         this.classList.add('tab-controls__btn--active');
 
         // Получаем значение категории товаров, которые нужно включить
+        console.log(this.dataset.tab);
+
+        // Отобразить нужные товары и скрыть не нужные
+        for (let product of tabsProducts) {
+            if (product.dataset.tabValue === this.dataset.tab) {
+                product.classList.remove('none');
+            } else {
+                product.classList.add('none');
+            }
+            
+        }
+
+
+
     })
 }
