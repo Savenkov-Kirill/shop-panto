@@ -78,15 +78,21 @@ for (let btn of tabsBtns) {
 
         // Отобразить нужные товары и скрыть не нужные
         for (let product of tabsProducts) {
-            if (product.dataset.tabValue === this.dataset.tab) {
+
+            // Проверка на All
+            if (this.dataset.tab === 'all') {
                 product.classList.remove('none');
             } else {
-                product.classList.add('none');
-            }
-            
+                if (product.dataset.tabValue === this.dataset.tab) {
+                    product.classList.remove('none');
+                } else {
+                    product.classList.add('none');
+                }
+            }   
         }
 
-
+        // Update Swiper
+        swiper.update()
 
     })
 }

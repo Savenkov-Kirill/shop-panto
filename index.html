@@ -18,7 +18,17 @@
                     </div>
                     
                     <ul class="nav-list">
-                        <li class="nav-list__item"><a href="#!" class="nav-list__link">Furniture</a></li>
+                        <li class="nav-list__item">
+                            <a href="#!" class="nav-list__link nav-list__link--dropdown">Furniture</a>
+                            <div class="nav-list__sub-nav">
+                                <ul class="sub-nav">
+                                    <li class="sub-nav__item"><a href="#!" class="sub-nav__link">Home</a></li>
+                                    <li class="sub-nav__item"><a href="#!" class="sub-nav__link">Services</a></li>
+                                    <li class="sub-nav__item"><a href="#!" class="sub-nav__link">Products</a></li>
+                                    <li class="sub-nav__item"><a href="#!" class="sub-nav__link">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </li>
                         <li class="nav-list__item"><a href="#!" class="nav-list__link">Shop</a></li>
                         <li class="nav-list__item"><a href="#!" class="nav-list__link">About Us</a></li>
                         <li class="nav-list__item"><a href="#!" class="nav-list__link">Contact</a></li>
@@ -29,9 +39,10 @@
                         <div class="cart__count">0</div>
                     </a>
     
+                    <button class="nav__btn"><img src="./img/icons/mobile-nav.svg" alt="Open navigation"></button>
                 </nav>
             
-            <div class="header__content">
+            <div class="header__content none">
                 <h1 class="header__title">Make Your Interior More Minimalistic & Modern</h1>
                 <p>Turn your room with panto into a lot more minimalist and modern with ease and speed</p>
 
@@ -44,7 +55,7 @@
                 
             </div>
 
-            <div class="header__dot-sofa">
+            <div class="header__dot-sofa none">
                 <button class="info-dot">
                     <div class="info-dot__circle"></div>
                     <div class="info-dot__radius"></div>
@@ -67,7 +78,7 @@
                 </div>
             </div>
 
-            <div class="header__dot-vase">
+            <div class="header__dot-vase none">
                 <button class="info-dot">
                     <div class="info-dot__circle"></div>
                     <div class="info-dot__radius"></div>
@@ -90,7 +101,7 @@
                 </div>
             </div>
 
-            <div class="header__dot-item">
+            <div class="header__dot-item none">
                 <button class="info-dot">
                     <div class="info-dot__circle"></div>
                     <div class="info-dot__radius"></div>
@@ -113,7 +124,7 @@
                 </div>
             </div>
 
-            <div class="header__dot-wall">
+            <div class="header__dot-wall none">
                 <button class="info-dot">
                     <div class="info-dot__circle"></div>
                     <div class="info-dot__radius"></div>
@@ -140,7 +151,7 @@
         </div>
     </header>
 
-    <section class="benefits">
+    <section class="benefits none">
         <div class="container">
             <div class="benefits__grid">
 
@@ -168,12 +179,13 @@
         </div>
     </section>
 
-    <section class="products">
+    <section class="products none">
         <div class="container">
             <h2 class="products__title">Best Selling Product</h2>
             <div class="products__tabs">
 
                 <div class="tab-controls">
+                    <button data-tab="all" class="tab-controls__btn tab-controls__btn--active">All</button>
                     <button data-tab="chair" class="tab-controls__btn">Chair</button>
                     <button data-tab="bed" class="tab-controls__btn">Beds</button>
                     <button data-tab="sofa" class="tab-controls__btn">Sofa</button>
@@ -617,7 +629,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer none">
         <div class="container container--small">
             <div class="footer__grid">
 
