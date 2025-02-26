@@ -142,7 +142,7 @@ html, body {
 }
 
 .header__nav {
-  margin-bottom: 86px;
+  margin-bottom: clamp(20px, 0.071rem + 5.89vw, 86px);
 }
 
 .header__content {
@@ -152,7 +152,8 @@ html, body {
 .header__title {
   margin-bottom: 14px;
   font-weight: 700;
-  font-size: 80px;
+  font-size: clamp(28px, 0.821rem + 4.64vw, 80px);
+  text-wrap: balance;
   line-height: 130%;
   letter-spacing: -0.8px;
   text-transform: capitalize;
@@ -162,44 +163,56 @@ html, body {
   margin: 0 auto;
   opacity: 0.8;
   max-width: 606px;
-  font-size: 24px;
+  font-size: clamp(16px, 0.857rem + 0.71vw, 24px);
   line-height: 160%;
+  text-wrap: balance;
 }
 
 .header__search {
+  display: inline-block;
   margin: 45px auto 0;
+}
+@media (max-width: 819px) {
+  .header__search {
+    display: none; /* test */
+  }
 }
 
 /* Dots */
-.header__dot-sofa {
+.header__dot {
   position: absolute;
+}
+@media (max-width: 819px) {
+  .header__dot {
+    display: none;
+  }
+}
+
+.header__dot--sofa {
   left: 20.5555555556%;
   top: 63.1918819188%;
 }
 
-.header__dot-vase {
-  position: absolute;
+.header__dot--vase {
   left: 7.9166666667%;
   top: 69.557195572%;
   transform: translate(-50%, -50%);
 }
 
-.header__dot-item {
-  position: absolute;
+.header__dot--item {
   left: 56.25%;
   top: 72.6014760148%;
   transform: translate(-50%, -50%);
 }
 
-.header__dot-wall {
-  position: absolute;
+.header__dot--wall {
   right: 3.1944444444%;
   top: 75.7380073801%;
 }
 
 .logo {
   font-weight: 700;
-  font-size: 28px;
+  font-size: clamp(18px, 0.946rem + 0.89vw, 28px);
   letter-spacing: 0.28px;
   text-transform: capitalize;
   color: #fff !important;
@@ -450,7 +463,7 @@ html, body {
 }
 
 .benefits {
-  padding: 120px 0;
+  padding: clamp(60px, 2.679rem + 5.36vw, 120px) 0;
 }
 
 .benefits__grid {
@@ -458,10 +471,21 @@ html, body {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
+@media (max-width: 992px) {
+  .benefits__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(30px, 0.982rem + 4.46vw, 60px) 20px;
+  }
+}
+@media (max-width: 629px) {
+  .benefits__grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 .benefits__title {
   font-weight: 700;
-  font-size: 42px;
+  font-size: clamp(32px, 1.702rem + 1.49vw, 42px);
   max-width: 260px;
 }
 
