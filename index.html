@@ -39,10 +39,10 @@
                         <div class="cart__count">0</div>
                     </a>
     
-                    <button class="nav__btn"><img src="./img/icons/mobile-nav.svg" alt="Open navigation"></button>
+                    <button id="open-mobile-nav-btn" class="nav__btn"><img src="./img/icons/mobile-nav.svg" alt="Open navigation"></button>
                 </nav>
             
-            <div class="header__content none">
+            <div class="header__content">
                 <h1 class="header__title">Make Your Interior More Minimalistic & Modern</h1>
                 <p>Turn your room with panto into a lot more minimalist and modern with ease and speed</p>
 
@@ -55,7 +55,7 @@
                 
             </div>
 
-            <div class="header__dot-sofa none">
+            <div class="header__dot-sofa">
                 <button class="info-dot">
                     <div class="info-dot__circle"></div>
                     <div class="info-dot__radius"></div>
@@ -78,7 +78,7 @@
                 </div>
             </div>
 
-            <div class="header__dot-vase none">
+            <div class="header__dot-vase">
                 <button class="info-dot">
                     <div class="info-dot__circle"></div>
                     <div class="info-dot__radius"></div>
@@ -101,7 +101,7 @@
                 </div>
             </div>
 
-            <div class="header__dot-item none">
+            <div class="header__dot-item">
                 <button class="info-dot">
                     <div class="info-dot__circle"></div>
                     <div class="info-dot__radius"></div>
@@ -124,7 +124,7 @@
                 </div>
             </div>
 
-            <div class="header__dot-wall none">
+            <div class="header__dot-wall">
                 <button class="info-dot">
                     <div class="info-dot__circle"></div>
                     <div class="info-dot__radius"></div>
@@ -149,7 +149,9 @@
             
 
         </div>
+
     </header>
+
 
     <section class="benefits none">
         <div class="container">
@@ -672,6 +674,38 @@
             </div>
         </div>
     </footer>
+
+    <!-- Mobile nav -->
+    <div id="mobile-nav" class="mobile-nav-wrapper">
+
+        <div class="mobile-nav-header">
+            <a href="#cart" class="mobile-cart">
+                <div href="#!" class="cart">
+                    <img class="cart__img" src="./img/icons/bag.svg" alt="bag">
+                    <div class="cart__count">0</div>
+                </div>
+                Cart
+            </a>
+            <button id="close-mobile-nav-btn" class="mobile-nav-btn-close">
+                <img src="./img/icons/close.svg" alt="Close navigation">
+            </button>
+        </div>
+
+        <ul class="mobile-nav">
+        <li class="mobile-nav__item">
+            <a href="#!" class="mobile-nav__link mobile-nav__link--dropdown">Furniture</a>
+                <ul class="mobile-sub-nav">
+                    <li class="mobile-sub-nav__item"><a href="#!" class="mobile-sub-nav__link">Home</a></li>
+                    <li class="mobile-sub-nav__item"><a href="#!" class="mobile-sub-nav__link">Services</a></li>
+                    <li class="mobile-sub-nav__item"><a href="#!" class="mobile-sub-nav__link">Products</a></li>
+                    <li class="mobile-sub-nav__item"><a href="#!" class="mobile-sub-nav__link">Contacts</a></li>
+                </ul>
+        </li>
+        <li class="mobile-nav__item"><a href="#!" class="mobile-nav__link">Shop</a></li>
+        <li class="mobile-nav__item"><a href="#!" class="mobile-nav__link">About Us</a></li>
+        <li class="mobile-nav__item"><a href="#!" class="mobile-nav__link">Contact</a></li>
+        </ul>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
