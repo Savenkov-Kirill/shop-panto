@@ -1,5 +1,6 @@
 .search-form {
     display: flex;
+    gap: 10px;
     max-width: 344px;
     padding: 8px 8px 8px 20px;
     justify-content: space-between;
@@ -12,6 +13,7 @@
     backdrop-filter: blur(4px);
 }
 .search-form__input {
+    flex-grow: 1;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -23,6 +25,7 @@
     }
 }
 .search-form__btn {
+    flex-shrink: 0;
     width: 40px;
     height: 40px;
     border-radius: 24px;
