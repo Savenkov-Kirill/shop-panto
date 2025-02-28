@@ -1,4 +1,4 @@
-# shop-panto
+# [shop-panto](https://savenkov-kirill.github.io/shop-panto/)
 Home page of the online store
 # RU
 HTML CSS/SCSS верстка главной страницы интернет магазина с JavaScript интерактивом, табами и Swiper слайдером, и мобильной адаптацией.
