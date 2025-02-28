@@ -4,6 +4,10 @@
     align-items: center;
     border-radius: 44px;
     background: #eee;
+
+    @include mobile () {
+        display: none;
+    }
 }
 
 .tab-controls__btn {

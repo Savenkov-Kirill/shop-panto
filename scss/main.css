@@ -570,6 +570,11 @@ html, body {
   border-radius: 44px;
   background: #eee;
 }
+@media (max-width: 629px) {
+  .tab-controls {
+    display: none;
+  }
+}
 
 .tab-controls__btn {
   height: 45px;
